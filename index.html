@@ -68,7 +68,28 @@ texture {
   box-shadow: #FF6314 0 -6px 8px inset;
   transform: scale(1.125);
 }
+#spin{
+  width: 100px;
+  height: 100px;
+  background-color: #0CB1C4;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 .button:active {
   transform: scale(1.025);
 }
@@ -79,7 +100,8 @@ texture {
     padding: .75rem 2rem;
   }
 
-}  
+}
+        
   #selected_target_hover_text {
     width:512px;
       height: 24px; 
@@ -90,7 +112,8 @@ texture {
       <div id="texture">
           <div id="selected_target">
             <div id="selected_target_hover_text">
-                
+                <div id="spin">
+                </div>
             </div>
             <div class="button">
                 Face
