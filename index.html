@@ -80,23 +80,31 @@ texture {
     font-size: 1.5rem;
     padding: .75rem 2rem;
   }
-}       
+
+}  
+  #selected_target_hover_text {
+    width:100%;
+      height: 24px; 
+    border: 1px solid black;
+  }
     </style>
     <body>
       <div id="texture">
-  <div class="button">
-    Body
-  </div>
-  <div class="button">
-    Star
-  </div>
-  <div class="button">
-    Face
-  </div>
-  <div class="button">
-    Test
-  </div>
-</div>
-
+          <div id="selected_target">
+            <div id="selected_target_hover_text">
+                
+            </div>
+            <div class="button">
+                Face
+            </div>  
+            <div class="button">
+                Body
+            </div>
+            <div class="button">
+                FOV
+            </div>
+          </div>
+          
+        </div>
     </body>
 </style>
